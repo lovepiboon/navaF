@@ -291,7 +291,7 @@
       }
 
       // Build a mailto: link so the message is sent via the user's email client.
-      var RECIPIENT = "lovepiboon@yahoo.com";
+      var RECIPIENT = "info@navatanee.com";
       var get = function (name) {
         var el = form.elements[name];
         return el ? el.value.trim() : "";
