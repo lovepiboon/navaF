@@ -290,7 +290,38 @@
         return;
       }
 
-      // Success (static site — no backend submission)
+      // Build a mailto: link so the message is sent via the user's email client.
+      var RECIPIENT = "lovepiboon@yahoo.com";
+      var get = function (name) {
+        var el = form.elements[name];
+        return el ? el.value.trim() : "";
+      };
+
+      var nameVal = get("name");
+      var emailVal = get("email");
+      var phoneVal = get("phone");
+      var subjectVal = get("subject");
+      var messageVal = get("message");
+
+      // Prefix the subject so the recipient knows it came from the main website.
+      var mailSubject = "NewWeb " + subjectVal;
+
+      var mailBody =
+        "Name: " + nameVal + "\n" +
+        "Email: " + emailVal + "\n" +
+        "Phone: " + phoneVal + "\n" +
+        "Subject: " + subjectVal + "\n" +
+        "\n" +
+        "Message:\n" + messageVal + "\n";
+
+      var mailtoHref =
+        "mailto:" + RECIPIENT +
+        "?subject=" + encodeURIComponent(mailSubject) +
+        "&body=" + encodeURIComponent(mailBody);
+
+      window.location.href = mailtoHref;
+
+      // Reset the form and show the success message.
       form.reset();
       if (success) {
         success.hidden = false;
