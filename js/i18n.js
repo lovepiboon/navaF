@@ -112,9 +112,7 @@
     "location.fax": "Fax",
     "location.email": "Email",
     "location.directions": "Get Directions",
-    "location.mapText": "Navatanee Golf Course & Club",
-    "location.mapSub": "Google Map embed placeholder",
-
+  
     // Contact
     "contact.eyebrow": "Contact Us",
     "contact.title": "Begin Your Journey",
@@ -223,9 +221,7 @@
     "location.fax": "",
     "location.email": "メール",
     "location.directions": "ルートを表示",
-    "location.mapText": "์",
-    "location.mapSub": "",
-
+  
     // Contact
     "contact.eyebrow": "お問い合わせ",
     "contact.title": "旅を始めよう",

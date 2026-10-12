@@ -549,13 +549,13 @@
         </div>
 
         <div class="location__map reveal">
-          <div class="map-placeholder" role="img" aria-label="Map showing the location of Navatanee Golf Course & Club">
-            <div class="map-placeholder__pin" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="48" height="48"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
-            </div>
-            <p class="map-placeholder__text" data-i18n="location.mapText">Navatanee Golf Course &amp; Club</p>
-            <p class="map-placeholder__sub" data-i18n="location.mapSub">Google Map embed placeholder</p>
-          </div>
+          <iframe
+            class="location__map-frame"
+            src="https://www.google.com/maps?q=Navatanee+Golf+Course+Bangkok+10230&output=embed"
+            title="Map showing the location of Navatanee Golf Course & Club"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
         </div>
       </div>
     </section>

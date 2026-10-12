@@ -702,6 +702,12 @@ textarea:focus-visible {
   overflow: hidden;
   box-shadow: var(--shadow-md);
 }
+.location__map-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border: 0;
+}
 .map-placeholder {
   aspect-ratio: 16 / 11;
   display: grid;
